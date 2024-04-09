@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tensorflow-serving-svc
+spec:
+  ports:
+    - port: 8500
+      targetPort: 8500
+      name: grpc
+    - port: 8501
+      targetPort: 8501
+      name: http
+  selector:
+    app: tensorflow-serving
+  type: ClusterIP
