@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> This repository is no longer being maintained. Please use the new [WAO](https://github.com/waok8s/wao-core) instead.
+
 # WAO Prediction Service
 
 Prediction service used in WAO-Scheduler and WAO-LB.
@@ -146,6 +149,12 @@ name:"konohana" version:<value:1218 > signature_name:"konohana"
 map[outputs:dtype:DT_FLOAT tensor_shape:<dim:<size:1 > dim:<size:1 > > float_val:150.60725 ]
 150.607254
 ```
+
+> [!NOTE]
+> You can rebuild the TensorFlow Serving gRPC client by running:
+> ```sh
+> ./prepare.sh
+> ```
 
 #### 4.4. Go HTTP client
 
